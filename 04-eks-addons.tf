@@ -16,7 +16,6 @@ module "eks_blueprints_addons" {
     chart_version = "9.29.0"
     repository    = "https://kubernetes.github.io/autoscaler"
     namespace     = "kube-system"
-    values        = [templatefile("${path.module}/values.yaml", {})]
   }
 
 }
